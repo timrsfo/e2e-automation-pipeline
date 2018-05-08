@@ -1,5 +1,14 @@
 #!groovy
 node {
+    properties([
+      parameters([
+        choice(name: 'DEPLOY_ENV',
+               defaultValue: 'DEV', 
+               choices: ['QA', 'DEV', 'PROD'], 
+               description: 'The target environment')
+      ])
+   ])
+
     stage('Git checkout') { // for display purposes
         git 'https://github.com/timrsfo/e2e-automation-pipeline.git'
     }
