@@ -3,7 +3,6 @@ node {
     properties([
       parameters([
         choice(name: 'DEPLOY_ENV',
-               defaultValue: 'DEV', 
                choices: ["QA\nDEV\nPROD"], 
                description: 'The target environment')
       ])
