@@ -9,6 +9,8 @@
     <version>1.0-SNAPSHOT</version>
 
     <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <serenity.version>1.6.3</serenity.version>
         <junit.version>4.12</junit.version>
         <slf4j.version>1.7.25</slf4j.version>

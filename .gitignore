@@ -1,0 +1,15 @@
+/target/
+/bin
+/test-output
+/.classpath
+/.project
+/logs
+/.settings
+/results
+/target
+**/*.zip
+**/test.properties
+**/.*.swp
+**/*.swp
+**/*.log
+.gitignore.swp
