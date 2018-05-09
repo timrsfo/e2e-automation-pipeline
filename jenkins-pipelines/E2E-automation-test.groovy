@@ -1,12 +1,19 @@
 #!groovy
 node {
+
+#    properties([
+#      parameters([
+#        choice(name: 'DEPLOY_ENV', choices: ["QA\nDEV\nPROD"], description: 'The target environment')
+#      ])
+#   ])
+
     properties([
       parameters([
-        choice(name: 'DEPLOY_ENV',
-               choices: ["QA\nDEV\nPROD"], 
-               description: 'The target environment')
-      ])
-   ])
+        string(name: 'DEPLOY_ENV', defaultValue: 'TESTING', description: 'The target environment', )
+       ])
+    ])
+
+    echo "DEPLOY_ENV is ${DEPLOY_ENV}"
 
     stage('Git checkout') { // for display purposes
         git 'https://github.com/timrsfo/e2e-automation-pipeline.git'
