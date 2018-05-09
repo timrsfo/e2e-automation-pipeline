@@ -1,11 +1,11 @@
 #!groovy
 node {
 
-#    properties([
-#      parameters([
-#        choice(name: 'DEPLOY_ENV', choices: ["QA\nDEV\nPROD"], description: 'The target environment')
-#      ])
-#   ])
+//    properties([
+//      parameters([
+//        choice(name: 'DEPLOY_ENV', choices: ["QA\nDEV\nPROD"], description: 'The target environment')
+//      ])
+//   ])
 
     properties([
       parameters([
