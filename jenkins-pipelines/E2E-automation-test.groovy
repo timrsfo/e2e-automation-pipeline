@@ -13,7 +13,7 @@ node {
        ])
     ])
 
-    echo "DEPLOY_ENV is ${DEPLOY_ENV}"
+    echo "DEPLOY_ENV is ${params.DEPLOY_ENV}"
 
     stage('Git checkout') { // for display purposes
         git 'https://github.com/timrsfo/e2e-automation-pipeline.git'
