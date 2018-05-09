@@ -33,7 +33,7 @@ node {
     }
     stage('API') {
         try {
-            sh "mvn clean verify -Dtags='type:API'"
+            sh "mvn clean verify -Dtags='type:API' -Dproperties=remote.properties"
         } catch (err) {
 
         } finally {
@@ -46,7 +46,7 @@ node {
     }
     stage('UI') {
         try {
-            sh "mvn clean verify -Dtags='type:UI'"
+            sh "mvn clean verify -Dtags='type:UI' -Dproperties=remote.properties"
         } catch (err) {
 
         } finally {
