@@ -9,8 +9,8 @@ node {
 
     properties([
       parameters([
-        string(name: 'DEPLOY_ENV', defaultValue: 'TESTING', description: 'The target environment', )
-        choice(name: 'CHOICE_ENV', choices: "QA\nDEV\nPROD", description: 'The choice environment')
+        string (name: 'DEPLOY_ENV', defaultValue: 'TESTING', description: 'The target environment'),
+        choice (name: 'CHOICE_ENV', choices: 'QA\nDEV\nPROD', description: 'The choice environment')
        ])
     ])
 
